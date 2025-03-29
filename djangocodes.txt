@@ -1,0 +1,18 @@
+python manage.py runsslserver 192.168.2.56:8000
+cd /home/adewole/cbt/
+source venv/bin/activate
+hostname -I
+cp example.env.txt .env
+ls -la
+python -m venv venv
+pip install django-sslserver
+pip install django-sslserver
+source /home/adewole2/cbt-master/venv/bin/activate
+python manage.py runsslserver 192.168.2.52:8000
+python manage.py load_students
+python manage.py load_questions questions.xlsx
+python manage.py export_results
+python manage.py runsslserver 192.168.1.101:8000
+lsof -i :8000
+python manage.py runserver 
+pip install pandas
