@@ -100,8 +100,8 @@ WSGI_APPLICATION = "cbt.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": env("DB_ENGINE"),
-        "NAME": env("DB_NAME"),
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "db.sqlite3"
         "USER": env("DB_USER"),
         "PASSWORD": env("DB_PASSWORD"),
     }
