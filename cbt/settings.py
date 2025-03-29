@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     "django_filters",
     "apps.core",
     "apps.exam",
-    "sslserver",
+    
 ]
 
 MIDDLEWARE = [
